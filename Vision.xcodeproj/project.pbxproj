@@ -22,9 +22,9 @@
 		8333CE2318EA71CD00E9D85D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8333CE0718EA71CD00E9D85D /* CoreData.framework */; };
 		8333CE2B18EA71CD00E9D85D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8333CE2918EA71CD00E9D85D /* InfoPlist.strings */; };
 		8333CE2D18EA71CD00E9D85D /* VisionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8333CE2C18EA71CD00E9D85D /* VisionTests.m */; };
-		8333CE3718EA724E00E9D85D /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8333CE3618EA724E00E9D85D /* opencv2.framework */; };
 		8333CE3918EA726A00E9D85D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8333CE3818EA726A00E9D85D /* Storyboard.storyboard */; };
 		8333CE3C18EA728400E9D85D /* VisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8333CE3B18EA728400E9D85D /* VisionViewController.m */; };
+		8372D72F18FE289100945CA5 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8372D72E18FE289100945CA5 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +56,10 @@
 		8333CE2818EA71CD00E9D85D /* VisionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VisionTests-Info.plist"; sourceTree = "<group>"; };
 		8333CE2A18EA71CD00E9D85D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8333CE2C18EA71CD00E9D85D /* VisionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisionTests.m; sourceTree = "<group>"; };
-		8333CE3618EA724E00E9D85D /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../opencv2.framework; sourceTree = "<group>"; };
 		8333CE3818EA726A00E9D85D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		8333CE3A18EA728400E9D85D /* VisionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisionViewController.h; sourceTree = "<group>"; };
 		8333CE3B18EA728400E9D85D /* VisionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisionViewController.m; sourceTree = "<group>"; };
+		8372D72E18FE289100945CA5 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8333CE3718EA724E00E9D85D /* opencv2.framework in Frameworks */,
+				8372D72F18FE289100945CA5 /* opencv2.framework in Frameworks */,
 				8333CE0418EA71CD00E9D85D /* CoreGraphics.framework in Frameworks */,
 				8333CE0818EA71CD00E9D85D /* CoreData.framework in Frameworks */,
 				8333CE0618EA71CD00E9D85D /* UIKit.framework in Frameworks */,
@@ -112,7 +112,7 @@
 		8333CE0018EA71CD00E9D85D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8333CE3618EA724E00E9D85D /* opencv2.framework */,
+				8372D72E18FE289100945CA5 /* opencv2.framework */,
 				8333CE0118EA71CD00E9D85D /* Foundation.framework */,
 				8333CE0318EA71CD00E9D85D /* CoreGraphics.framework */,
 				8333CE0518EA71CD00E9D85D /* UIKit.framework */,
@@ -382,14 +382,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/chris/Documents/Honours,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vision/Vision-Prefix.pch";
 				INFOPLIST_FILE = "Vision/Vision-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -399,14 +403,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/chris/Documents/Honours,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vision/Vision-Prefix.pch";
 				INFOPLIST_FILE = "Vision/Vision-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -470,6 +478,7 @@
 				8333CE3218EA71CD00E9D85D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8333CE3318EA71CD00E9D85D /* Build configuration list for PBXNativeTarget "VisionTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +487,7 @@
 				8333CE3518EA71CD00E9D85D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
