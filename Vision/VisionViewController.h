@@ -9,13 +9,15 @@
 #import <opencv2/highgui/cap_ios.h>
 #import <UIKit/UIKit.h>
 
-@interface VisionViewController : UIViewController{
+@interface VisionViewController : UIViewController<CvVideoCameraDelegate>{
     IBOutlet UIImageView* imageView;
-    IBOutlet UIButton* button;
+    IBOutlet UIButton* startButton;
+    IBOutlet UIButton* stopButton;
     
     CvVideoCamera* videoCamera;
 }
 - (IBAction)actionStart:(id)sender;
+- (IBAction)actionStop:(id)sender;
 
 @property (nonatomic, retain) CvVideoCamera* videoCamera;
 

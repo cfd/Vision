@@ -23,8 +23,15 @@
 		8333CE2B18EA71CD00E9D85D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8333CE2918EA71CD00E9D85D /* InfoPlist.strings */; };
 		8333CE2D18EA71CD00E9D85D /* VisionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8333CE2C18EA71CD00E9D85D /* VisionTests.m */; };
 		8333CE3918EA726A00E9D85D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8333CE3818EA726A00E9D85D /* Storyboard.storyboard */; };
-		8333CE3C18EA728400E9D85D /* VisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8333CE3B18EA728400E9D85D /* VisionViewController.m */; };
+		8333CE3C18EA728400E9D85D /* VisionViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8333CE3B18EA728400E9D85D /* VisionViewController.mm */; };
 		8372D72F18FE289100945CA5 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8372D72E18FE289100945CA5 /* opencv2.framework */; };
+		8372FD7C19B432D200714DA5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8372FD7B19B432D200714DA5 /* Accelerate.framework */; };
+		8372FD7E19B432DC00714DA5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8372FD7D19B432DC00714DA5 /* AssetsLibrary.framework */; };
+		8372FD8019B432E700714DA5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8372FD7F19B432E700714DA5 /* AVFoundation.framework */; };
+		8372FD8219B432F300714DA5 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8372FD8119B432F300714DA5 /* CoreImage.framework */; };
+		8372FD8419B432FF00714DA5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8372FD8319B432FF00714DA5 /* CoreMedia.framework */; };
+		8372FD8619B4330500714DA5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8372FD8519B4330500714DA5 /* CoreVideo.framework */; };
+		8372FD8819B4330C00714DA5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8372FD8719B4330C00714DA5 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +65,15 @@
 		8333CE2C18EA71CD00E9D85D /* VisionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisionTests.m; sourceTree = "<group>"; };
 		8333CE3818EA726A00E9D85D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		8333CE3A18EA728400E9D85D /* VisionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisionViewController.h; sourceTree = "<group>"; };
-		8333CE3B18EA728400E9D85D /* VisionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisionViewController.m; sourceTree = "<group>"; };
+		8333CE3B18EA728400E9D85D /* VisionViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VisionViewController.mm; sourceTree = "<group>"; };
 		8372D72E18FE289100945CA5 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../opencv2.framework; sourceTree = "<group>"; };
+		8372FD7B19B432D200714DA5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		8372FD7D19B432DC00714DA5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		8372FD7F19B432E700714DA5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8372FD8119B432F300714DA5 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		8372FD8319B432FF00714DA5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8372FD8519B4330500714DA5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		8372FD8719B4330C00714DA5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +81,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8372D72F18FE289100945CA5 /* opencv2.framework in Frameworks */,
 				8333CE0418EA71CD00E9D85D /* CoreGraphics.framework in Frameworks */,
+				8372FD8819B4330C00714DA5 /* QuartzCore.framework in Frameworks */,
+				8372FD8619B4330500714DA5 /* CoreVideo.framework in Frameworks */,
+				8372FD8419B432FF00714DA5 /* CoreMedia.framework in Frameworks */,
+				8372FD8219B432F300714DA5 /* CoreImage.framework in Frameworks */,
+				8372FD8019B432E700714DA5 /* AVFoundation.framework in Frameworks */,
+				8372FD7E19B432DC00714DA5 /* AssetsLibrary.framework in Frameworks */,
+				8372FD7C19B432D200714DA5 /* Accelerate.framework in Frameworks */,
+				8372D72F18FE289100945CA5 /* opencv2.framework in Frameworks */,
 				8333CE0818EA71CD00E9D85D /* CoreData.framework in Frameworks */,
 				8333CE0618EA71CD00E9D85D /* UIKit.framework in Frameworks */,
 				8333CE0218EA71CD00E9D85D /* Foundation.framework in Frameworks */,
@@ -112,6 +133,13 @@
 		8333CE0018EA71CD00E9D85D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8372FD8719B4330C00714DA5 /* QuartzCore.framework */,
+				8372FD8519B4330500714DA5 /* CoreVideo.framework */,
+				8372FD8319B432FF00714DA5 /* CoreMedia.framework */,
+				8372FD8119B432F300714DA5 /* CoreImage.framework */,
+				8372FD7F19B432E700714DA5 /* AVFoundation.framework */,
+				8372FD7D19B432DC00714DA5 /* AssetsLibrary.framework */,
+				8372FD7B19B432D200714DA5 /* Accelerate.framework */,
 				8372D72E18FE289100945CA5 /* opencv2.framework */,
 				8333CE0118EA71CD00E9D85D /* Foundation.framework */,
 				8333CE0318EA71CD00E9D85D /* CoreGraphics.framework */,
@@ -131,7 +159,7 @@
 				8333CE1518EA71CD00E9D85D /* Vision.xcdatamodeld */,
 				8333CE0A18EA71CD00E9D85D /* Supporting Files */,
 				8333CE3A18EA728400E9D85D /* VisionViewController.h */,
-				8333CE3B18EA728400E9D85D /* VisionViewController.m */,
+				8333CE3B18EA728400E9D85D /* VisionViewController.mm */,
 			);
 			path = Vision;
 			sourceTree = "<group>";
@@ -260,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8333CE3C18EA728400E9D85D /* VisionViewController.m in Sources */,
+				8333CE3C18EA728400E9D85D /* VisionViewController.mm in Sources */,
 				8333CE1718EA71CD00E9D85D /* Vision.xcdatamodeld in Sources */,
 				8333CE1418EA71CD00E9D85D /* AppDelegate.m in Sources */,
 				8333CE1018EA71CD00E9D85D /* main.m in Sources */,
